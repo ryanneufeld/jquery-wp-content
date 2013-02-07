@@ -82,7 +82,7 @@ input,
 select,
 textarea {
 	font-family: sans-serif;
-	color: #333;
+	color: $black;
 }
 
 /*
@@ -522,19 +522,19 @@ textarea {
  * 2. Using :placeholder for completeness.
  */
 ::-webkit-input-placeholder {
-	color: #9A1B1E;
+	color: $primary-red;
 }
 :-moz-placeholder { /* 1 */
-	color: #9A1B1E;
+	color: $primary-red;
 }
 ::-moz-placeholder {
-	color: #9A1B1E;
+	color: $primary-red;
 }
 :-ms-placeholder {
-	color: #9A1B1E;
+	color: $primary-red;
 }
 :placeholder { /* 2 */
-	color: #9A1B1E;
+	color: $primary-red;
 }
 
 #content input:focus,
@@ -542,10 +542,10 @@ textarea {
 #content textarea:focus {
 	outline: none;
 
-	color: #333;
+	color: $black;
 	background: #FFF;
 
-	border: 1px solid #B24926;
+	border: 1px solid $secondary-orange;
 
 	-webkit-box-shadow: 0px 0px 6px rgba(23,138,156,0.5),
 						inset 0px 1px 3px rgba(0,0,0,0.2);
@@ -1190,7 +1190,7 @@ h3 [class*=" icon-"] {
 
 body {
 	-webkit-font-smoothing: antialiased;
-	color: #333;
+	color: $black;
 	font: 15px/22.5px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 
@@ -1200,30 +1200,30 @@ iframe {
 }
 
 #container {
-	background: #0769AD;
+	background: $primary-blue;
 	margin: 0 auto;
 	padding: 0 20px;
 
 }
 
 .jquery-ui #container {
-	background: #B24926;
+	background: $secondary-orange;
 }
 
 .jquery-mobile #container {
-	background: #108040;
+	background: $secondary-green;
 }
 
 .sizzlejs #container {
-	background: #9A1B1E;
+	background: $primary-red;
 }
 
 .qunitjs #container {
-	background: #390F39;
+	background: $secondary-purple;
 }
 
 .jquery-foundation #container {
-	background: #333;
+	background: $black;
 }
 
 .jquery-learn #container {
@@ -1235,12 +1235,12 @@ iframe {
 	-webkit-box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
 	box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
 	padding: 20px 0;
-	border-top: 1px solid #333;
+	border-top: 1px solid $black;
 	border-radius: 0 0 10px 10px;
 	position: relative;
 }
 .no-boxshadow #content-wrapper {
-	border: 1px solid #333;
+	border: 1px solid $black;
 }
 
 .constrain {
@@ -1527,48 +1527,33 @@ iframe {
 
 #container, 
 footer {
-	border-top: 1px solid #7ACEF4;
+	border-top: 1px solid $secondary-blue;
 }
 
 .jquery-ui #container, 
 .jquery-ui footer {
-	border-top-color: #FAA523;
+	border-top-color: $primary-orange;
 }
 
 .jquery-mobile #container, 
 .jquery-mobile footer {
-	border-top-color: #3EB249;
+	border-top-color: $primary-green;
 }
 
 .sizzlejs #container, 
 .sizzlejs footer {
-	border-top-color: #FAA523;
+	border-top-color: $primary-orange;
 }
 
 .qunitjs #container, 
 .qunitjs footer {
-	border-top-color: #9C3493;
+	border-top-color: $primary-purple;
 }
 
 .jquery-learn #container, 
 .jquery-learn footer {
-	border-top-color: #333;
+	border-top-color: $black;
 }
-
-/* Brand Colors for General Use
-   ========================================================================== */
-.color.black { background-color: #333; }
-.color.primary-blue { background-color: #0769AD; }
-.color.secondary-blue { background-color: #7ACEF4; }
-.color.navy-blue { background-color: #131B28; }
-.color.primary-orange { background-color: #FAA523; }
-.color.secondary-orange { background-color: #B24926; }
-.color.primary-green { background-color: #3EB249; }
-.color.secondary-green { background-color: #108040; }
-.color.sizzle-orange { background-color: #FAA523; }
-.color.sizzle-red { background-color: #9A1B1E; }
-.color.qunit-primary-purple { background-color: #9C3493; }
-.color.qunit-secondary-purple { background-color: #390F39; }
 
 /* Logo & Navigation
    ========================================================================== */
@@ -1690,9 +1675,9 @@ nav#main {
 }
 
 .no-boxshadow nav#main {
-	border-top: 1px solid #333;
-	border-left: 1px solid #333;
-	border-right: 1px solid #333;
+	border-top: 1px solid $black;
+	border-left: 1px solid $black;
+	border-right: 1px solid $black;
 }
 
 nav#main ul {
@@ -1759,12 +1744,12 @@ nav#main .searchform input:focus {
 }
 
 .no-boxshadow nav#main .searchform {
-	border: 1px solid #333;
+	border: 1px solid $black;
 }
 
 .no-boxshadow nav#main .searchform input {
 	background: #fff;
-	color: #333;
+	color: $black;
 }
 
 /*
@@ -2074,7 +2059,7 @@ pre b {
 #content h2 {
 	font-size: 24px;
 	line-height: 24px;
-	color: #333;
+	color: $black;
 	margin-bottom: 10px;
 }
 
@@ -2172,7 +2157,7 @@ p.author a {
 
 #banner-secondary a,
 #banner-secondary a:hover {
-	color: #7ACEF4;
+	color: $secondary-blue;
 }
 
 #banner-secondary em,
@@ -2450,7 +2435,7 @@ footer .download a:hover {
 footer .footer-icon-links {
 	padding: 15px 0;
 	margin: 0 2%;
-	border-top: solid 1px #333;
+	border-top: solid 1px $black;
 	-webkit-box-shadow: #000 0 -1px 0;
 	box-shadow: #000 0 -1px 0;
 }
@@ -2536,7 +2521,7 @@ footer h3:after {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	border: solid 1px #333;
+	border: solid 1px $black;
 	border-bottom: none;
 	border-radius: 4px 4px 0 0;
 }
@@ -2637,7 +2622,7 @@ footer #legal {
 	clear: left;
 	display: block;
 	margin-top: 1em;
-	border-top: solid 1px #333;
+	border-top: solid 1px $black;
 	-webkit-box-shadow: #000 0 -1px 0;
 	box-shadow: #000 0 -1px 0;
 }
@@ -2826,7 +2811,7 @@ footer li img {
 }
 
 #content .section-title {
-	background: #333;
+	background: $black;
 	border: 1px solid #111;
 	padding: 8px 15px;
 	font-size: 16px;
@@ -2846,7 +2831,7 @@ footer li img {
 
 .api-item .returns {
 	font-size: 16px;
-	color: #333;
+	color: $black;
 	font-weight: normal;
 }
 
@@ -2856,7 +2841,7 @@ footer li img {
 	margin: 0 auto 15px;
 	max-width: 750px;
 	border-radius: 3px;
-	color: #333;
+	color: $black;
 	text-shadow: 0 1px 0 #fff;
 }
 
@@ -2958,7 +2943,7 @@ footer li img {
 .option-type {
 	font-size: 16px;
 	font-weight: normal;
-	color: #333;
+	color: $black;
 	float: right;
 }
 
@@ -3705,7 +3690,7 @@ pre, code {
 }
 pre code {
   display: block; padding: 0.5em;
-  color: #333;
+  color: $black;
   background: #f8f8ff
 }
 
@@ -3725,7 +3710,7 @@ pre .nginx .title,
 pre .subst,
 pre .request,
 pre .status {
-  color: #333;
+  color: $black;
   font-weight: bold
 }
 

@@ -23,8 +23,8 @@ module.exports = function(grunt) {
 				}
 			},
 			styles: {
-				files: "themes/jquery/css/base.css",
-				tasks: ["mincss"],
+				files: "themes/jquery/stylus/**/*.styl",
+				tasks: ["stylus", "mincss"],
 				options: {
 					interrupt: true
 				}
@@ -38,20 +38,12 @@ module.exports = function(grunt) {
 
 		stylus: {
 			compile: {
-				/*
 				options: {
-					paths: ['path/to/import', 'another/to/import'],
-					urlfunc: 'embedurl',
-					// use embedurl('test.png') in our code to trigger Data URI embedding
-					use: [
-					require('fluidity') // use stylus plugin at compile time
-					]
-					import: [ //  @import 'foo', 'bar/moo', etc. into every .styl file
-					'foo', //  that is compiled. These might be findable based on values you gave
-					'bar/moo' //  to `paths`, or a plugin you added under `use`
+					paths: ["themes/jquery/stylus/util"],
+					"import": [
+						"colors"
 					]
 				},
-				*/
 				files: {
 					"themes/jquery/dist/output.css": ["themes/jquery/stylus/*.styl"] // compile and concat into single file
 				}
