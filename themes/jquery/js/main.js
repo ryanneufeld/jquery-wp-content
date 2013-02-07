@@ -91,16 +91,16 @@ $(function() {
 		});
 
 		$(".member-level .pay").on( "click", function() {
-			var a = $(this)
+			var a = $(this);
 			StripeCheckout.open({
-				key: 'pk_NjMf2QUPtR28Wg0xmyWtepIzUziVr',
+				key: "pk_NjMf2QUPtR28Wg0xmyWtepIzUziVr",
 				image: a.data("image"),
 				name: a.data("name"),
 				description: a.data("description"),
 				panelLabel: a.data("panel-label"),
 				amount: a.data("amount"),
 				token: function(res) {
-					alert(res.id);
+					window.alert(res.id);
 				}
 			});
 		});
@@ -119,7 +119,7 @@ $(function() {
 		demoDescription = $( ".demo-description" ),
 		sourceView = $( ".view-source > div" ),
 		demoList = $( ".demo-list" ),
-		currentDemo = location.hash.substring( 1 );
+		currentDemo = window.location.hash.substring( 1 );
 
 	demoList.on( "click", "a", function( event ) {
 		event.preventDefault();
@@ -142,7 +142,7 @@ $(function() {
 
 		demoList.find( ".active" ).removeClass( "active" );
 		$( this ).parent().addClass( "active" );
-		location.hash = "#" + demo;
+		window.location.hash = "#" + demo;
 	});
 
 	$( ".view-source a" ).on( "click", function() {
