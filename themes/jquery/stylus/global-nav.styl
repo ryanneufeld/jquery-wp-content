@@ -1,0 +1,220 @@
+/* Global Nav
+   ========================================================================== */
+
+.ie #global-nav nav ul li {
+	top: 2px;
+}
+
+#global-nav {
+	background: url(../images/jq-global-nav.png) repeat-x 0 bottom #1b1b1b;
+
+	nav {
+		height: 34px;
+
+		ul {
+			text-align: left;
+			display: inline;
+			float: left;
+			margin: 0;
+			list-style: none;
+			border-right: 1px solid rgba(255, 255, 255, 0.0976562);
+			border-left: 1px solid rgba(0, 0, 0, 0.347656);
+		}
+
+		ul.links {
+			float: right;
+		}
+
+		ul li {
+			font: bold 13px/17px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+			display: inline-block;
+			float: left;
+			position: relative;
+			top: 1px;
+			cursor: pointer;
+			-webkit-transition: all 0.2s;
+			transition: all 0.2s;
+			text-shadow: 0 0px 2px #000;
+			border-left: 1px solid rgba(255, 255, 255, 0.0976562);
+			border-right: 1px solid rgba(0, 0, 0, 0.347656);
+
+			&:hover {
+				background: url(../images/bg-footer-noise.jpg) #000;
+				color: #fff;
+			}
+
+			i {
+				height: 1em;
+			}
+
+			a {
+				color: #e6e6e6;
+				font-weight: normal;
+				font-style: normal;
+				text-decoration: none;
+				display: block;
+				padding: 8px 12px;
+			}
+
+			ul {
+				padding: 0;
+				position: absolute;
+				top: 32px;
+				left: -2px;
+				width: 120px;
+				display: none;
+				opacity: 0;
+				visibility: hidden;
+				-webkit-transiton: opacity 0.2s;
+				transition: opacity 0.2s;
+				-webkit-box-shadow: 0 43px 5px rgba(0, 0, 0, 0.4);
+				box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+				z-index: 400;
+			}
+
+			ul li {
+				background: url(../images/bg-footer-noise.jpg) #000;
+				display: block;
+				color: #fff;
+				float: none;
+			}
+
+			&:hover { background: #000; }
+			&:hover ul {
+				display: block;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		ul.projects li {
+			&.project {
+				width: 42px;
+				padding: 0;
+				height: 33px;
+				text-indent: -9999px;
+				background: url(../images/jq-nav-icons.png) -6px 0;
+				z-index: 10;
+			}
+
+			&.project a {
+				display: block;
+				height: 33px;
+			}
+
+			&.jquery-ui {
+				background-position: -57px 0px;
+			}
+
+			&.jquery-mobile {
+				background-position: -107px 0px;
+			}
+
+			&.sizzlejs {
+				background-position: -155px 0px;
+			}
+
+			&.qunitjs {
+				background-position: -204px 0px;
+			}
+		}
+	}
+
+}
+
+$all-projects = "#global-nav nav ul.projects"
+
+.jquery {$all-projects} {
+	border-left: none;
+
+	.jquery {
+		background-position: 0 bottom;
+		width: 52px;
+		position: relative;
+		margin-top:1px;
+		border: none;
+	}
+
+	.jquery-ui {
+		border-left: none;
+		background-position: -59px 0;
+	}
+}
+
+.jquery-ui {$all-projects} {
+	.jquery-ui {
+		background-position: -50px bottom;
+		width: 52px;
+		position: relative;
+		margin-top:1px;
+		border: none;
+	}
+
+	.jquery {
+		border-right: none;
+		background-position: -2px 0;
+	}
+
+	.jquery-mobile {
+		border-left: none;
+	}
+}
+
+.jquery-mobile {$all-projects} {
+	.jquery-mobile {
+		background-position: -100px bottom;
+		width: 52px;
+		position: relative;
+		margin-top:1px;
+		border: none;
+	}
+
+	.jquery-ui {
+		border-right: none;
+		background-position: -53px 0;
+	}
+
+	.sizzlejs{
+		border-left: none;
+		background-position: -157px 0;
+	}
+}
+
+
+.sizzlejs {$all-projects} {
+	.jquery-mobile {
+		border-right: none;
+		background-position: -102px 0;
+	}
+
+	.sizzlejs {
+		background-position: -148px bottom;
+		width: 52px;
+		position: relative;
+		margin-top:1px;
+		border: none;
+	}
+
+	.qunitjs {
+		border-left: none;
+		background-position: -206px 0;
+	}
+}
+
+
+.qunitjs {$all-projects} {
+	border-right: none;
+
+	.sizzlejs {
+		border-right: none;
+	}
+
+	.qunitjs {
+		background-position: -202px bottom;
+		width: 52px;
+		position: relative;
+		margin-top:1px;
+		border: none;
+	}
+}
+
