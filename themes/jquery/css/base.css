@@ -2351,9 +2351,13 @@ footer .cdn {
 	box-shadow: rgba(255,255,255,0.15) 0 1px 0;
 }
 
-footer .cdn ~ .cdn { margin-top: 5px; }
+footer .cdn ~ .cdn {
+	margin-top: 5px;
+}
 
-footer .cdn ~ .cdn strong { text-align: right; }
+footer .cdn ~ .cdn strong {
+	text-align: right;
+}
 
 footer .cdn strong {
 	text-align: center;
@@ -2411,27 +2415,37 @@ footer .cdn input {
 	font-size: 12px;
 }
 
-footer .cdn input:focus { outline: none; }
+footer .cdn input:focus {
+    outline: none;
+}
 
 footer .download {
-	text-align: center;
-	color: #fff;
-	padding: 10px 2% 15px 2%;
-	line-height: 140%;
+    text-align: center;
+    color: #fff;
+    padding: 10px 2% 15px 2%;
+    line-height: 140%;
 }
 
-footer .download strong { margin-right: 10px; }
+footer .download strong {
+    margin-right: 10px;
+}
 
-footer .download > span { white-space: nowrap; }
+footer .download > span {
+    white-space: nowrap;
+}
 
-footer .download a { margin: 0 10px; }
+footer .download a {
+    margin: 0 10px;
+}
 
 footer .download a em {
-	font-style: normal;
-	color: #aaa;
+    font-style: normal;
+    color: #aaa;
 }
 
-footer .download a:hover { border-bottom: solid 1px #888; }
+footer .download a:hover {
+    border-bottom: solid 1px #888;
+}
 
 footer .footer-icon-links {
 	padding: 15px 0;
@@ -2598,7 +2612,9 @@ footer .footer-site-links li:hover a:before {
 	color: #e6e6e6;
 }
 
-.footer-site-links li { display: inline-block; }
+.footer-site-links li {
+	display: inline-block;
+}
 
 footer .col {
 	margin-left: 2.5%;
