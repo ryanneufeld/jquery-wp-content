@@ -23,7 +23,7 @@
 
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
 
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=1">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/index.css">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<!--[if lt IE 7]><link rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
@@ -34,8 +34,7 @@
 	<script>window.jQuery || document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.0.min.js"%3E%3C/script%3E'))</script>
 	<script src="http://code.jquery.com/jquery-migrate-1.0.0.min.js"></script>
 
-	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/dist/index.js"></script>
 
 	<script src="//use.typekit.net/wde1aof.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
