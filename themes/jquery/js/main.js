@@ -119,7 +119,7 @@ $(function() {
 		demoDescription = $( ".demo-description" ),
 		sourceView = $( ".view-source > div" ),
 		demoList = $( ".demo-list" ),
-		currentDemo = window.location.hash.substring( 1 );
+		currentDemo = location.hash.substring( 1 );
 
 	demoList.on( "click", "a", function( event ) {
 		event.preventDefault();
@@ -142,7 +142,7 @@ $(function() {
 
 		demoList.find( ".active" ).removeClass( "active" );
 		$( this ).parent().addClass( "active" );
-		window.location.hash = "#" + demo;
+		location.hash = "#" + demo;
 	});
 
 	$( ".view-source a" ).on( "click", function() {
