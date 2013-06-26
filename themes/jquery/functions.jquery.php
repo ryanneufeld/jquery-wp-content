@@ -178,9 +178,9 @@ function jq_banner() {
 	}
 
 	echo
-		'<a href="http://events.jquery.org/2013/portland/">' .
+		'<a href="http://events.jquery.org/2013/austin/">' .
 			'<img src="' . get_template_directory_uri() . '/images/' .
-				'jquery_portland_banner_' . $site_color . '.png">' .
+				'jquery_austin_banner.png">' .
 		'</a>';
 }
 

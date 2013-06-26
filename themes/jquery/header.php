@@ -79,8 +79,8 @@
 					</li>
 					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
 						<ul>
-							<li><a href="http://events.jquery.org/2013/uk/">UK</a></li>
-							<li><a href="http://events.jquery.org/2013/portland/">Portland</a></li>
+							<li><a href="http://events.jquery.org/2013/austin/">Austin</a></li>
+							<li><a href="http://2013.cssdevconf.com/">CSS Dev Conf</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
