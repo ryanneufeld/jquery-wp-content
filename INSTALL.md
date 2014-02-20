@@ -65,19 +65,19 @@ You do not need to configure your `/etc/hosts` file for `local.*` because `jquer
 
 ```
 ├── jquery
-│   ├── gw-resources
-│   ├── index.php
-│   ├── jquery-wp-content
-│   ├── license.txt
-│   ├── readme.html
-│   ├── wp-activate.php
-│   ├── wp-admin
-│   ├── wp-blog-header.php
-│   ├── wp-comments-post.php
-│   ├── wp-config-sample.php
-│   ├── wp-content
-│   ├── ...
-│   └── xmlrpc.php
+│   ├── gw-resources
+│   ├── index.php
+│   ├── jquery-wp-content
+│   ├── license.txt
+│   ├── readme.html
+│   ├── wp-activate.php
+│   ├── wp-admin
+│   ├── wp-blog-header.php
+│   ├── wp-comments-post.php
+│   ├── wp-config-sample.php
+│   ├── wp-content
+│   ├── ...
+│   └── xmlrpc.php
 ```
 
 1. Create a MySQL database and user. You can choose any name you want for both. Follow the [WordPress instructions](http://codex.wordpress.org/Installing_WordPress#Step_2:_Create_the_Database_and_a_User) for a step by step guide.
